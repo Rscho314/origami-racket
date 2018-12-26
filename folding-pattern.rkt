@@ -9,7 +9,7 @@
 
 (define vertices (λ v (list->set v)))
 
-(define folds (λ f (list->set f)))
+(define creases (λ f (list->set f)))
 
-(define (folding-pattern vertices folds)
-  (hash 'vertices vertices 'folds folds))
+(define (folding-pattern vertices creases)
+  (hash 'vertices vertices 'creases creases))
